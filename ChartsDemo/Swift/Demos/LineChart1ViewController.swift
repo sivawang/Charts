@@ -115,6 +115,9 @@ class LineChart1ViewController: DemoBaseViewController {
         
         let set1 = LineChartDataSet(values: values, label: "DataSet 1")
         set1.drawIconsEnabled = false
+        set1.drawCirclesEnabled = true
+        
+        set1.circlesX = [10]
         
         set1.lineDashLengths = [5, 2.5]
         set1.highlightLineDashLengths = [5, 2.5]

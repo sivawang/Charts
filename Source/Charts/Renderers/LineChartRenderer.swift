@@ -634,7 +634,13 @@ open class LineChartRenderer: LineRadarRenderer
             for j in stride(from: _xBounds.min, through: _xBounds.range + _xBounds.min, by: 1)
             {
                 guard let e = dataSet.entryForIndex(j) else { break }
-
+                
+                if dataSet.circlesX.count > 0 {
+                    if !dataSet.circlesX.contains(e.x) {
+                        continue
+                    }
+                }
+                
                 pt.x = CGFloat(e.x)
                 pt.y = CGFloat(e.y * phaseY)
                 pt = pt.applying(valueToPixelMatrix)
