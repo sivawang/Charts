@@ -56,7 +56,7 @@ public protocol ILineChartDataSet: ILineRadarChartDataSet
     var isDrawCirclesEnabled: Bool { get }
     
     /// Siva
-    var circlesX: [Double] { get set }
+    var circleIndex: [Int] { get set }
     
     /// The color of the inner circle (the circle-hole).
     var circleHoleColor: NSUIColor? { get set }
