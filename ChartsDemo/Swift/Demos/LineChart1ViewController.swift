@@ -117,8 +117,6 @@ class LineChart1ViewController: DemoBaseViewController {
         set1.drawIconsEnabled = false
         set1.drawCirclesEnabled = true
         
-        set1.circleIndex = [10]
-        
         set1.lineDashLengths = [5, 2.5]
         set1.highlightLineDashLengths = [5, 2.5]
         set1.setColor(.black)

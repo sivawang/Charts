@@ -124,7 +124,7 @@ open class LineChartDataSet: LineRadarChartDataSet, ILineChartDataSet
     open var isDrawCirclesEnabled: Bool { return drawCirclesEnabled }
     
     /// Siva
-    open var circleIndex = [Int]()
+    open var circles = [ChartDataEntry]()
     
     /// The color of the inner circle (the circle-hole).
     open var circleHoleColor: NSUIColor? = NSUIColor.white

@@ -609,7 +609,7 @@ open class LineChartRenderer: LineRadarRenderer
         {
             guard let dataSet = lineData.getDataSetByIndex(i) as? ILineChartDataSet else { continue }
             
-            if dataSet.circleIndex.count == 0 {
+            if dataSet.circles.count == 0 {
                 continue
             }
             
@@ -639,9 +639,8 @@ open class LineChartRenderer: LineRadarRenderer
             {
                 guard let e = dataSet.entryForIndex(j) else { break }
                 
-                
-                if dataSet.circleIndex.count > 0 {
-                    if !dataSet.circleIndex.contains(j) {
+                if dataSet.circles.count > 0 {
+                    if !dataSet.circles.contains(e) {
                         continue
                     }
                 }
